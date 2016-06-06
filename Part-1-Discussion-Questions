@@ -1,0 +1,94 @@
+Part 1: Discussion Questions
+
+Recursion -------------------------------------------------------------------------
+
+In your own words, what is Recursion?
+    -A function that calls itself, likely over and over until it reaches a given 'end', or 'base case'
+
+Why is it necessary to have a Base Case?
+    -To know at what point you want the recursively called functions to come to an end and 'return'
+
+
+Graphs -------------------------------------------------------------------------
+
+What is a Graph?
+    -A data structure with nodes that connect to each other, similar to a tree, but different in that a 
+        single node can have many adjacent nodes or parent nodes. 
+How is a Graph different from a Tree?
+    -A give child node in a tree can only have one parent node, unlike in a graph
+
+Give an example of somthing that would be good to model with a Graph.
+    -Facebook friends is a good example that we went over
+
+
+Performance of Different Data Structures -----------------------------------------
+
+Fill in the missing spots in the chart with the correct runtimes. Do this by reasoning through how the data structures work, NOT by looking up the solution. Add-R means add to the right/end/top and Add-L means add to the left/beginning. There are Xs in the spots where that operation doesn’t make sense for that data structure (for instance, you can’t index a Stack, or pop from the end of a Queue). We’ve provided the first few answers for you.
+
+Fill in the runtimes for the following actions for the table below: -----------------
+
+Data Structure                  Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array)             O(1)    O(n)    O(1)    O(n)    O(n)    O(1)
+Linked List                     O(n)    O(n)    O(1)    O(1)    O(1)    O(n)
+Doubly-Linked List              O(n)    O(n)    O(1)    O(1)    O(1)    O(1)            
+Queue (as Array)                X       X       O(1)    X       O(n)    X
+Queue (as LL or DLL)            X       X       O(1)    X       O(1)    X
+Stack (as Array, LL, or DLL)    X       X       O(1)    X       X       O(1)
+Deque (as DLL)                  X       X       O(1)    O(1)    O(1)    O(1)
+
+Index: Find an item in the structure when you know its position
+Search: Find an item in the structure when you know its data
+Add(R/L): Set a key in set/dictionary or add node to tree
+Pop(R/L): Remove a key or node
+
+
+Fill in Runtime and Memory:  ----------------------------------------------------
+The answers for Dictionary have been provided; you should fill in the rest:
+
+Data Structure          Get     Add     Delete  Iterate     Memory
+Dictionary (Hash Map)   O(1)    O(1)    O(1)    O(n)        medium
+Set (Hash Map)          O(1)    O(1)    O(1)    O(n)        medium
+Binary Search Tree      O(logn) O(n)    O(n)    O(1)        low        
+Tree                    O(n)    O(1)    O(1)    O(1)        low
+
+Get: Find an item in the structure
+Add: Set a key in set/dictionary or add node to tree
+Delete: Remove a key or node
+Iterate: Find next item in data structure
+Memory: Relative to data, how much memory is used? (Choices: a little, medium, or a lot)
+
+
+Sorting -------------------------------------------------------------------------
+
+Describe in words how the Bubble Sort algorithm works.
+    -Bubble sort sorts numbers by starting from the beggining of an array and by 'bubbling' up larger numbers
+        towards the end of the array, one number at a time until the array is sorted
+
+Describe in words how the Merge Sort algorithm works.
+    -Merge sort sorts arrays by spliting an array into individual arrays with only one value each, and then merging
+        those single value arrays together into two sorted arrays, and then merging the two sorted arrays into 
+        one sorted array. Or it can take two sorted arrays and merge them together.
+
+Describe in words how the Quick Sort algorithm works.
+    -The quicksort chooses a random 'pivot' point in the array, the iterates across the array, comparing each value 
+        to the pivot until the pivot is in it's correct place, then chooses another pivot and continues until
+        the array is sorted.
+
+
+
+Git Branching -------------------------------------------------------------------------
+
+Give an instance when you would use git branching.
+    -One would use git branching when they wanted to add a new feature or large chunk of code, and would want
+        to be able to commit their code and save it without having it merged into the 'master' branch of code,
+        which would be safer and introduce less bugs during production
+
+What is a pull request?
+    -A pull request is when a person submits their code on github and 'requests' that the person 
+        who has permissions to merge code on the repository, reviews their code to and decided whether 
+        or not the code can be merged in with the existing code
+
+
+
+
+
